@@ -1,0 +1,145 @@
+body {
+    font-family: "League Spartan", serif;;
+
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat:no-repeat, no-repeat ;
+    padding:0rem 8rem;
+    height: 100vh;
+}
+h2{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+p{
+    line-height: 1.3rem;
+    font-size: 15px;
+}
+.container_first{
+    display: grid;
+    grid-template-columns: repeat(2, 40% 60%);
+    gap: 2.5rem;
+}
+.container_second{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    place-items: center;
+    padding: 1rem 3rem;
+}
+.container_users{
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+    align-items: center;
+    height: 4rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.container_stars{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-items: center;
+    
+}
+.container_stars img{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+}
+.row_first{
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    padding: 3rem;
+}
+.row_second{
+    background-color: hsl(300, 43%, 22%);
+    color:hsl(300, 24%, 96%) ;
+    border-radius: 0.5rem;
+    padding: 2rem 2rem ;
+    text-align: left;
+    font-weight: 500;
+    height: 12rem;
+}
+.grade{
+    background-color:hsl(300, 24%, 96%) ;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 21rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(2, 35% 65%);
+    color: hsl(300, 43%, 22%);
+    padding: 0rem 1rem;
+}
+.nicknames{
+    font-weight: 700;
+    margin: 0rem;
+    text-align: left;
+}
+.status{
+    color: hsl(333, 80%, 67%) ;
+    margin: 0rem;
+    text-align: left;
+}
+img{
+    border-radius: 10rem;
+    text-align: center;
+}
+#last-com{
+    position: relative; top: 1rem;
+}
+#first-com{
+    position: relative; top: -1rem
+}
+#first-grade{
+    position: relative; right: 5rem;
+}
+#last-grade{
+    position: relative; left: 5rem;
+}
+@media (max-width: 426px){
+    .container_first{
+        margin: 0rem;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+    .container_second{
+        grid-template-columns: 1fr;
+    }
+    .container_stars{
+        width: 60%;
+    }
+    .grade{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .row_first{
+        padding:1rem ;
+        text-align: center;
+    }
+    .row_second{
+        padding: 1rem;
+    }
+    body{
+        padding: 0rem;
+    }
+    #last-com{
+        position: relative; top: 0rem;
+    }
+    #first-com{
+        position: relative; top: 0rem
+    }
+    .grade{
+        width: auto;
+    }
+    #first-grade{
+        right: 0rem;
+    }
+    #last-grade{
+        left: 0rem;
+    }
+}
